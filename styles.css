@@ -1,0 +1,167 @@
+* {
+    font-family: "Open Sans";
+    background-color: #438d43;
+    color: #faf6ed;
+}
+
+h1 {
+    color: #faf6ed;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    color: #faf6ed;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 700;
+}
+
+p {
+    color: #faf6ed;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer p {
+    color: #faf6ed;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+header img {
+    height: 70px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+    margin: 5px;
+}
+
+header li a {
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: #438d43;
+    background-color: #faf6ed;
+    border-radius: 1.5px;
+}
+
+.active {
+    color: #438d43;
+    background-color: #faf6ed;
+    border-radius: 1.5px;
+}
+
+body {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.stand_out {
+    font-weight: 700;
+    text-align: center;
+}
+
+.text {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.key_principles_1, .key_principles_2, .key_principles_3, .key_principles_4, .key_principles_5, .key_principles_link {
+    text-align: center;
+}
+
+.subtext {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.home_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    justify-content: center;
+}
+
+.home_gallery_image {
+    padding: 0.5vw;
+    height: 20vw;
+    width: auto;
+}
+
+.about_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    justify-content: center;
+}
+
+.about_gallery_image {
+    padding: 0.5vw;
+    height: 28vw;
+    width: auto;
+}
+
+.tree_planting_initiative_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    justify-content: center;
+}
+
+.tree_planting_initiative_gallery_image {
+    padding: 0.5vw;
+    height: 15vw;
+    width: auto;
+}
+
+.recycling_initiative_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    justify-content: center;
+}
+
+.recycling_initiative_gallery_image {
+    padding: 0.5vw;
+    height: 13.6vw;
+    width: auto;
+}
+
+.contact_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    justify-content: center;
+}
+
+.contact_gallery_image {
+    padding: 0.5vw;
+    height: 21vw;
+    width: auto;
+}
