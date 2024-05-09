@@ -1,6 +1,7 @@
+/* Default styling for all */
 * {
     font-family: "Open Sans";
-    background-color: #438d43;
+    background-color: #417f3c;
     color: #faf6ed;
 }
 
@@ -30,12 +31,14 @@ footer p {
     font-weight: 300;
 }
 
+/* Restrict image size and add spacing */
 header img {
     height: 70px;
     padding-bottom: 5px;
     margin-left: 20px;
 }
 
+/* Navigation bar */
 header {
     position: fixed;
     top: 0;
@@ -46,23 +49,27 @@ header {
     align-items: center;
 }
 
+/* Navigation bar */
 header * {
     display: inline;
     margin: 5px;
 }
 
+/* Remove underline */
 header li a {
     text-decoration: none;
 }
 
+/* Highlight when cursor hovers over */
 header li a:hover {
-    color: #438d43;
+    color: #417f3c;
     background-color: #faf6ed;
     border-radius: 1.5px;
 }
 
+/* Highlight page name in navbar when on page */
 .active {
-    color: #438d43;
+    color: #417f3c;
     background-color: #faf6ed;
     border-radius: 1.5px;
 }
@@ -87,6 +94,7 @@ footer {
     padding-right: 15vw;
 }
 
+/* Centre align key principles and link to Enviroschools */
 .key_principles_1, .key_principles_2, .key_principles_3, .key_principles_4, .key_principles_5, .key_principles_link {
     text-align: center;
 }
@@ -96,6 +104,7 @@ footer {
     font-weight: 300;
 }
 
+/* Home page image gallery */
 .home_gallery {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +119,7 @@ footer {
     width: auto;
 }
 
+/* About Us page image gallery */
 .about_gallery {
     display: flex;
     flex-wrap: wrap;
@@ -124,6 +134,7 @@ footer {
     width: auto;
 }
 
+/* Tree Planting page image gallery */
 .tree_planting_initiative_gallery {
     display: flex;
     flex-wrap: wrap;
@@ -138,6 +149,7 @@ footer {
     width: auto;
 }
 
+/* Recycling page image gallery */
 .recycling_initiative_gallery {
     display: flex;
     flex-wrap: wrap;
@@ -152,6 +164,7 @@ footer {
     width: auto;
 }
 
+/* Contact page image gallery */
 .contact_gallery {
     display: flex;
     flex-wrap: wrap;
