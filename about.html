@@ -17,50 +17,74 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Navigation bar -->
-        <header>
+        <!-- Old Navigation bar -->
+        <!-- <header>
             <a href="index.html"><img alt="Nelson College Environmental Committee logo" src="media/logo_transparent.png" /></a>
             <nav>
                 <ul>
-                    <!-- Links with "About Us" highlighted via "active" class -->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
+                    <-- Links with "Home" highlighted via "active" class ->
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="initiatives.html">Initiatives</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-        </header>
-        <!-- Main heading -->
-        <h1>About Us</h1>
-        <!-- Text content -->
-        <div class="text">
-            <p>The Nelson College Environmental Committee was started in 2009 with one 
-                simple goal: <strong>to increase the sustainability and aware of Nelson 
-                College and its students</strong>. Although a very big goal, it 
-                has been making great strides towards achieving it over the years since.</p>
-            <p>Beyond 2009, the committee has expanded into the many different branches 
-                of sustainability and environmental action. It has started recycling and
-                tree planting initiatives and is looking at starting pest control and composting 
-                initiatives in 2024. Committee members have also taken part in many 
-                different environmental strikes, gatherings, and cross-school 
-                collaborations to not only increase the college's environmental 
-                awareness and sustainability but that of the wider community as well.</p>
-            <p>The Nelson College Environmental Committee is a future-focused committee. 
-                We focus on ensuring that the environment is nurtured not only in the 
-                present but also in the future. We make sure that Nelson College 
-                maintains sustainable practices to minimise our impact on the environment 
-                and to improve the environmental awareness of our students. The Nelson 
-                College Environmental Committee is necessary in ensuring that the 
-                students of Nelson College are aware of their impact and take 
-                environmental action to reduce not only their own, but that of others. 
-                Spreading further awareness, and further action.</p>
-        </div>
-        <!-- Image gallery -->
-        <div class="about_gallery">
-            <img class="about_gallery_image" src="media/about/tree_planting.jpg" alt="Committee tree planting photo photo" />
-            <img class="about_gallery_image" src="media/about/recycling.JPG" alt="Committee landfill trip photo" />
-            <img class="about_gallery_image" src="media/about/hui_3.png" alt="Environmental hui discussion photo photo" />
-        </div>
+        </header> -->
+
+        <!-- New Navigation Bar -->
+        <nav>
+            <a href="index.html" class="logo-link"><img alt="Nelson College Environmental Committee logo" src="media/logo_transparent.png" /></a>
+
+            <input type="checkbox" id="sidebar-active" title="dropdown" />
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+
+            <label for="sidebar-active" id="overlay"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="initiatives.html">Initiatives</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+        <main>
+            <!-- Main heading -->
+            <h1>About Us</h1>
+            <!-- Text content -->
+            <div class="text">
+                <p>The Nelson College Environmental Committee was started in 2009 with one 
+                    simple goal: <strong>to increase the sustainability and aware of Nelson 
+                    College and its students</strong>. Although a very big goal, it 
+                    has been making great strides towards achieving it over the years since.</p>
+                <p>Beyond 2009, the committee has expanded into the many different branches 
+                    of sustainability and environmental action. It has started recycling and
+                    tree planting initiatives and is looking at starting pest control and composting 
+                    initiatives in 2024. Committee members have also taken part in many 
+                    different environmental strikes, gatherings, and cross-school 
+                    collaborations to not only increase the college's environmental 
+                    awareness and sustainability but that of the wider community as well.</p>
+                <p>The Nelson College Environmental Committee is a future-focused committee. 
+                    We focus on ensuring that the environment is nurtured not only in the 
+                    present but also in the future. We make sure that Nelson College 
+                    maintains sustainable practices to minimise our impact on the environment 
+                    and to improve the environmental awareness of our students. The Nelson 
+                    College Environmental Committee is necessary in ensuring that the 
+                    students of Nelson College are aware of their impact and take 
+                    environmental action to reduce not only their own, but that of others. 
+                    Spreading further awareness, and further action.</p>
+            </div>
+            <!-- Image gallery -->
+            <div class="about_gallery">
+                <img class="about_gallery_image" src="media/about/tree_planting.jpg" alt="Committee tree planting photo photo" />
+                <img class="about_gallery_image" src="media/about/recycling.JPG" alt="Committee landfill trip photo" />
+                <img class="about_gallery_image" src="media/about/hui_3.png" alt="Environmental hui discussion photo photo" />
+            </div>
+        </main>
         <!-- Footer -->
         <footer>
             <p>&copy;2024 Nelson College Environmental Committee</p>

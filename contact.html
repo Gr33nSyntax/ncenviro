@@ -17,50 +17,74 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Navigation bar -->
-        <header>
+        <!-- Old Navigation bar -->
+        <!-- <header>
             <a href="index.html"><img alt="Nelson College Environmental Committee logo" src="media/logo_transparent.png" /></a>
             <nav>
                 <ul>
-                    <!-- Links with "Contact Us" highlighted via "active" class -->
-                    <li><a href="index.html">Home</a></li>
+                    <-- Links with "Home" highlighted via "active" class ->
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="initiatives.html">Initiatives</a></li>
-                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-        </header>
-        <!-- Main heading -->
-        <h1>Contact Us</h1>
-        <!-- Text content -->
-        <div class="text">
-            <p>If you want to create meaningful change within Nelson College and the 
-                wider community, join the Nelson College Environmental Committee. </p>
-            <p>Meetings are held every <strong>Tuesday lunchtime</strong> in <strong>
-                L9</strong> in which we do various activities, such as tree planting, 
-                mulching, organising events, or planning for future initiatives. </p>
-            <p>If you have any questions, concerns, or ideas, do not hesitate to come 
-                along and ask! Alternatively, feel free to contact us via email or 
-                Teams:</p>
-                <ul>
-                    <!-- Emails with mailto: attribute -->
-                    <li>Mr. Fraser (head teacher): 
-                        <a href="mailto:fe@nelson.school.nz">fe@nelson.school.nz</a>
-                    </li>
-                    <li>Zach Irving (year 13 co-leader): 
-                        <a href="mailto:zachary.irving@nc.school.nz">zachary.irving@nc.school.nz</a>
-                    </li>
-                    <li>Ryan Thelin (year 12 co-leader):
-                        <a href="mailto:ryan.thelin@nc.school.nz">ryan.thelin@nc.school.nz</a>
-                    </li>
-                </ul>
-        </div>
-        <!-- Image gallery -->
-        <div class="contact_gallery">
-            <img class="contact_gallery_image" src="media/contact/bark_bay.jpg" alt="Bark Bay hui photo" />
-            <img class="contact_gallery_image" src="media/contact/sausage_sizzle.jpg" alt="Collaboration sausage sizzle photo" />
-            <img class="contact_gallery_image" src="media/contact/tree_planting.jpg" alt="Collaboration tree planting photo" />
-        </div>
+        </header> -->
+
+        <!-- New Navigation Bar -->
+        <nav>
+            <a href="index.html" class="logo-link"><img alt="Nelson College Environmental Committee logo" src="media/logo_transparent.png" /></a>
+
+            <input type="checkbox" id="sidebar-active" title="dropdown" />
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+
+            <label for="sidebar-active" id="overlay"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="initiatives.html">Initiatives</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </div>
+
+        </nav>
+        <main>
+            <!-- Main heading -->
+            <h1>Contact Us</h1>
+            <!-- Text content -->
+            <div class="text">
+                <p>If you want to create meaningful change within Nelson College and the 
+                    wider community, join the Nelson College Environmental Committee. </p>
+                <p>Meetings are held every <strong>Tuesday lunchtime</strong> in <strong>
+                    L9</strong> in which we do various activities, such as tree planting, 
+                    mulching, organising events, or planning for future initiatives. </p>
+                <p>If you have any questions, concerns, or ideas, do not hesitate to come 
+                    along and ask! Alternatively, feel free to contact us via email or 
+                    Teams:</p>
+                    <ul>
+                        <!-- Emails with mailto: attribute -->
+                        <li>Mr. Fraser (head teacher): 
+                            <a href="mailto:fe@nelson.school.nz">fe@nelson.school.nz</a>
+                        </li>
+                        <li>Zach Irving (year 13 co-leader): 
+                            <a href="mailto:zachary.irving@nc.school.nz">zachary.irving@nc.school.nz</a>
+                        </li>
+                        <li>Ryan Thelin (year 12 co-leader):
+                            <a href="mailto:ryan.thelin@nc.school.nz">ryan.thelin@nc.school.nz</a>
+                        </li>
+                    </ul>
+            </div>
+            <!-- Image gallery -->
+            <div class="contact_gallery">
+                <img class="contact_gallery_image" src="media/contact/bark_bay.jpg" alt="Bark Bay hui photo" />
+                <img class="contact_gallery_image" src="media/contact/sausage_sizzle.jpg" alt="Collaboration sausage sizzle photo" />
+                <img class="contact_gallery_image" src="media/contact/tree_planting.jpg" alt="Collaboration tree planting photo" />
+            </div>
+        </main>
         <!-- Footer -->
         <footer>
             <p>&copy;2024 Nelson College Environmental Committee</p>

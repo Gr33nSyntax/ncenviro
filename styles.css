@@ -31,54 +31,6 @@ footer p {
     font-weight: 300;
 }
 
-/* Restrict image size and add spacing */
-header img {
-    height: 70px;
-    padding-bottom: 5px;
-    margin-left: 20px;
-}
-
-/* Navigation bar */
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 90px;
-    display: flex;
-    align-items: center;
-}
-
-/* Navigation bar */
-header * {
-    display: inline;
-    margin: 5px;
-}
-
-/* Remove underline */
-header li a {
-    text-decoration: none;
-}
-
-/* Highlight when cursor hovers over */
-header li a:hover {
-    color: #417f3c;
-    background-color: #faf6ed;
-    border-radius: 1.5px;
-}
-
-/* Highlight page name in navbar when on page */
-.active {
-    color: #417f3c;
-    background-color: #faf6ed;
-    border-radius: 1.5px;
-}
-
-body {
-    margin-top: 80px;
-    padding: 30px;
-}
-
 footer {
     text-align: center;
     padding-top: 50px;
@@ -178,3 +130,190 @@ footer {
     height: 21vw;
     width: auto;
 }
+
+/* NEW NAVIGATION BAR */
+nav {
+    height: 60px;
+    background-color: #417f3c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #faf6ed;
+}
+
+nav a:hover {
+    background-color: #faf6ed;
+    color: #417f3c;
+}
+
+nav .logo-link {
+    padding-left: 2px;
+    padding-top: 3px;
+}
+
+nav .logo-link {
+    margin-right: auto;
+}
+
+.logo-link img {
+    height: 65px;
+}
+
+.logo-link img:hover {
+    color: #417f3c;
+}
+
+.logo-link:hover {
+    background-color: #417f3c;
+}
+
+nav svg {
+    fill: #faf6ed;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.active {
+    color: #417f3c;
+    background-color: #faf6ed;
+}
+
+a.logo-link {
+    padding-right: 5px;
+}
+
+/* Responsive for Mobile Devices */
+@media (max-width: 600px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 200px;
+
+        background-color: #417f3c;
+        box-shadow: -5px 0 5px rgba(65, 127, 60, 0.25);
+        transition: 0.75s ease-out;
+    }
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        opacity: 0.25;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    body {
+        margin-top: 100px;
+    }
+    nav .logo-link {
+        padding-left: 2px;
+        padding-top: 3px;
+        padding-bottom: 0;
+    }
+}
+
+
+/* OLD NAVIGATION BAR */
+
+/* Restrict image size and add spacing 
+header img {
+    height: 70px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+}*/
+
+/* Navigation bar 
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}*/
+
+/* Navigation bar 
+header * {
+    display: inline;
+    margin: 5px;
+}*/
+
+/* Remove underline 
+header li a {
+    text-decoration: none;
+}*/
+
+/* Highlight when cursor hovers over 
+header li a:hover {
+    color: #417f3c;
+    background-color: #faf6ed;
+    border-radius: 1.5px;
+}*/
+
+/* Highlight page name in navbar when on page 
+.active {
+    color: #417f3c;
+    background-color: #faf6ed;
+    border-radius: 1.5px;
+}*/
