@@ -216,6 +216,88 @@ a.logo-link {
     padding-right: 5px;
 }
 
+img {
+    border-radius: 5%;
+}
+
+/* Responsive Gallery */
+@media (max-width: 900px) {
+    /* Home page image gallery */
+    .home_gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        justify-content: center;
+    }
+    
+    .home_gallery_image {
+        padding: 0.5vw;
+        height: 40vw;
+        width: auto;
+        max-width:60vw;
+    }
+    /* About page image gallery */
+    .about_gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        justify-content: center;
+    }
+    
+    .about_gallery_image {
+        padding: 0.5vw;
+        height: 50vw;
+        width: auto;
+        max-width: 300px;
+    }
+    /* Tree Planting page image gallery */
+    .tree_planting_initiative_gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        justify-content: center;
+    }
+
+    .tree_planting_initiative_gallery_image {
+        padding: 0.5vw;
+        height: 30vw;
+        width: auto;
+    }
+
+    /* Recycling page image gallery */
+    .recycling_initiative_gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        justify-content: center;
+    }
+
+    .recycling_initiative_gallery_image {
+        padding: 0.5vw;
+        height: 30vw;
+        width: auto;
+    }
+
+    /* Contact page image gallery */
+    .contact_gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        justify-content: center;
+    }
+
+    .contact_gallery_image {
+        padding: 0.5vw;
+        height: 40vw;
+        width: auto;
+    }
+}
+
 /* Responsive for Mobile Devices */
 @media (max-width: 600px) {
     .links-container {
